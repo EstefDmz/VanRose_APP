@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.ContactPage"
+             Title="Contacto">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="rose.png" VerticalOptions="End" HorizontalOptions="Start" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+            </Image>
+            <Image Source="rose.png" VerticalOptions="End" HorizontalOptions="End" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+                <Image.ScaleX>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="-1" />
+                    </OnPlatform>
+                </Image.ScaleX>
+            </Image>
+            <Image Source="rose.png" VerticalOptions="Start" HorizontalOptions="End" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+                <Image.ScaleX>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="-1" />
+                    </OnPlatform>
+                </Image.ScaleX>
+                <Image.ScaleY>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="-1" />
+                    </OnPlatform>
+                </Image.ScaleY>
+            </Image>
+            <Image Source="rose.png" VerticalOptions="Start" HorizontalOptions="Start" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+                <Image.ScaleY>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="-1" />
+                    </OnPlatform>
+                </Image.ScaleY>
+            </Image>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Frame CornerRadius="640" Margin="10" BackgroundColor="#e1b2ff">
+                    <Frame.HeightRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="320" Tablet="640" />
+                    </Frame.HeightRequest>
+                    <Frame.WidthRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="320" Tablet="640" />
+                    </Frame.WidthRequest>
+                   
+                <StackLayout>
+                        <Label Text="Contacto" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+                            <Label.FontSize>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="48" Tablet="110" />
+                            </Label.FontSize>
+                            <Label.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Tablet="0, 40, 0, 0"/>
+                            </Label.Margin>
+                        </Label>
+                        <Label Text="Dirección" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                            <Label.FontSize>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="36" />
+                            </Label.FontSize>
+                            <Label.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="0, 20, 0, 0" Tablet="0, 40, 0, 0" />
+                            </Label.Margin>
+                        </Label>
+                        <Label Text="Teléfono" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                            <Label.FontSize>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="36" />
+                            </Label.FontSize>
+                            <Label.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="0, 20, 0, 0" Tablet="0, 40, 0, 0" />
+                            </Label.Margin>
+                        </Label>
+                        <Label Text="Correo" TextColor="White" HorizontalOptions="Center" VerticalOptions="Start" FontAttributes="Bold" HorizontalTextAlignment="Center">
+                            <Label.FontSize>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="36" />
+                            </Label.FontSize>
+                            <Label.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="0, 20, 0, 0" Tablet="0, 40, 0, 0" />
+                            </Label.Margin>
+                        </Label>
+                        <Image Source="ig.png" HorizontalOptions="Center">
+                            <Image.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="-190, 0, 0, -30" Tablet="-350, 10, 0,0" />
+                            </Image.Margin>
+                            <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="50" Tablet="100" />
+                            </Image.HeightRequest>
+                        </Image>
+                        <Image Source="tt.png" HorizontalOptions="Center">
+                            <Image.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="-60,0,0, -55" Tablet="-150, -50,0, 0" />
+                            </Image.Margin>
+                            <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="50" Tablet="100" />
+                            </Image.HeightRequest>
+                        </Image>
+                        <Image Source="wpp.png" HorizontalOptions="Center" >
+                            <Image.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="60,0,0,-85" Tablet="150,-105,0,0" />
+                            </Image.Margin>
+                            <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="50" Tablet="100" />
+                            </Image.HeightRequest>
+                        </Image>
+                        <Image Source="fb.png" HorizontalOptions="Center">
+                            <Image.Margin>
+                                <OnIdiom x:TypeArguments="Thickness" Phone="190,0,0,0" Tablet="350,-165,0,0" />
+                            </Image.Margin>
+                            <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="50" Tablet="100" />
+                            </Image.HeightRequest>
+                        </Image>
+                    </StackLayout>
+            </Frame>
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

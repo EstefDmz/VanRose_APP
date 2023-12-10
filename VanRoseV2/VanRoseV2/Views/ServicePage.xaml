@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.ServicePage"
+             Title="Servicios">
+    <ContentPage.Content>
+        <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceAround" AlignItems="Center">
+        <StackLayout Margin="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid RowSpacing="30" ColumnSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout BackgroundColor="#e1b2ff" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                        <StackLayout.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="200" Tablet="330" />
+                        </StackLayout.HeightRequest>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                    <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                                <Image Source="star.png" HorizontalOptions="Start">
+                                    <Image.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Tablet="100" Phone="50" />
+                                        </Image.HeightRequest>
+                                        <Image.WidthRequest>
+                                            <OnIdiom x:TypeArguments="x:Double" Tablet="100" Phone="50" />
+                                        </Image.WidthRequest>
+                                </Image>
+                                <Label Grid.Column="1" Text="Servicio 1" FontSize="18" TextColor="Black" VerticalTextAlignment="Center"/>
+                    </Grid>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0">
+                    <Image Source="bracelets.png" Aspect="AspectFill" HeightRequest="200">
+                            <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="200" Tablet="330" />
+                            </Image.HeightRequest>
+                           </Image>
+                </StackLayout>
+                <StackLayout BackgroundColor="#e1b2ff" Grid.Row="1" Grid.Column="1">
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="star.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" />
+                            <Label Grid.Column="1" Text="Servicio 2" TextColor="Black" FontSize="18" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout BackgroundColor="#e1b2ff" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="star.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" />
+                            <Label Grid.Column="1" Text="Servicio 3" FontSize="18" TextColor="Black" VerticalTextAlignment="Center" />
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

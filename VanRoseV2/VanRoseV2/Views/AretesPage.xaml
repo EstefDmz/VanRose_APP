@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.AretesPage"
+             Title="Aretes">
+    <ContentPage.Content>
+        <StackLayout>
+            <CarouselView x:Name="Carousel1" Margin="10, 80, 10, 0">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>drawable/aretes1.jpg</x:String>
+                        <x:String>drawable/aretes2.jpg</x:String>
+                        <x:String>drawable/aretes4.jpg</x:String>
+                        <x:String>drawable/aretes5.jpg</x:String>
+                        <x:String>drawable/aretes6.jpg</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Frame BorderColor="Gray" CornerRadius="8" HasShadow="True">
+                                <Image Source="{Binding .}" WidthRequest="200" Aspect="AspectFill">
+                                    <Image.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="200" Tablet="400" />
+                                    </Image.HeightRequest>
+                                </Image>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <CarouselView x:Name="Carousel2" Margin="10, 0, 10, 0">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>drawable/aretes6.jpg</x:String>
+                        <x:String>drawable/aretes5.jpg</x:String>
+                        <x:String>drawable/aretes2.jpg</x:String>
+                        <x:String>drawable/aretes1.jpg</x:String>
+                        <x:String>drawable/aretes4.jpg</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Frame BorderColor="Gray" CornerRadius="8" HasShadow="True">
+                                <Image Source="{Binding .}" WidthRequest="200" Aspect="AspectFill">
+                                    <Image.HeightRequest>
+                                        <OnIdiom x:TypeArguments="x:Double" Phone="200" Tablet="400" />
+                                    </Image.HeightRequest>
+                                </Image>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

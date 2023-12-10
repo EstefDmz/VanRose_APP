@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.HomePage"         
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="Van Rose" HorizontalTextAlignment="Center" TextColor="#733295" FontFamily="Lobster">
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="66" Tablet="132"/>
+                </Label.FontSize>
+            </Label>
+            <Label Text="Hecho a mano, diseñado para el alma" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Italic">
+                <Label.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="14" Tablet="28"/>
+                </Label.FontSize>
+            </Label>
+            <Label Text=" " HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Italic" FontSize="14" />
+            <Button Text="Servicios" BackgroundColor="#a158c7" TextColor="White" Clicked="Servicios_Clicked">
+                <Button.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="10" Tablet="22" />
+                </Button.FontSize>
+            </Button>
+            <Button Text="Colección" BackgroundColor="#a158c7" TextColor="White" Clicked="Coleccion_Clicked">
+                <Button.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="10" Tablet="22" />
+                </Button.FontSize>
+            </Button>
+            <Button Text="Sobre mí" BackgroundColor="#a158c7" TextColor="White" Clicked="SobreMi_Clicked">
+                <Button.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="10" Tablet="22" />
+                </Button.FontSize>
+            </Button>
+            <Button Text="Contacto" BackgroundColor="#a158c7" TextColor="White" Clicked="Contacto_Clicked">
+                <Button.FontSize>
+                    <OnIdiom x:TypeArguments="x:Double" Phone="10" Tablet="22" />
+                </Button.FontSize>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.AboutmePage"
+             Title="Sobre mí">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="star.png" VerticalOptions="Start" HorizontalOptions="Start" Margin="10, 80, 0, 0">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.WidthRequest>
+            </Image>
+            <Image Source="star.png" VerticalOptions="Start" HorizontalOptions="Center" Margin="0, 30, 0, 0" >
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.WidthRequest>
+            </Image>
+            <Image Source="star.png" VerticalOptions="Start" HorizontalOptions="End" Margin="0, 80, 10, 0">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="200" Phone="100" />
+                </Image.WidthRequest>
+            </Image>
+            <Image Source="rose.png" VerticalOptions="End" HorizontalOptions="Start" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+            </Image>
+            <Image Source="rose.png" VerticalOptions="End" HorizontalOptions="End" Margin="-20">
+                <Image.HeightRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.HeightRequest>
+                <Image.WidthRequest>
+                    <OnIdiom x:TypeArguments="x:Double" Tablet="250" Phone="150" />
+                </Image.WidthRequest>
+                <Image.ScaleX>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="Android" Value="-1" />
+                    </OnPlatform>
+                </Image.ScaleX>
+            </Image>
+
+
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="chica1.png" Aspect="AspectFit">
+                    <Image.HeightRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="300" Tablet="600" />
+                    </Image.HeightRequest>
+                    <Image.WidthRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="300" Tablet="600" />
+                    </Image.WidthRequest>
+                    </Image>
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." FontSize="18" TextColor="Black" WidthRequest="300" HorizontalTextAlignment="Center">
+                    <Label.WidthRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="300" Tablet="600" />
+                    </Label.WidthRequest>
+                </Label>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

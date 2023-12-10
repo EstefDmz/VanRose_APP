@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VanRoseV2.Views.CollectionPage"
+             Title="Colección">
+    <ContentPage.Content>
+        <StackLayout Margin="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Grid RowSpacing="30" ColumnSpacing="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                        <ColumnDefinition.Width>
+                            <OnIdiom x:TypeArguments="GridLength" Phone="100" Tablet="200" />
+                        </ColumnDefinition.Width>
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition>
+                        <ColumnDefinition.Width>
+                            <OnIdiom x:TypeArguments="GridLength" Phone="100" Tablet="200" />
+                        </ColumnDefinition.Width>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <StackLayout.HeightRequest>
+                        <OnIdiom x:TypeArguments="x:Double" Phone="200" Tablet="300" />
+                    </StackLayout.HeightRequest>
+                    <Image Source="collares.png" x:Name="collaresImgClick" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" Tablet="250" />
+                        </Image.HeightRequest>
+                        <Image.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="100" Tablet="200" />
+                        </Image.WidthRequest>
+                    </Image>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
+                    <Label Text="Collares" x:Name="collaresClick" TextColor="#f57dd6" HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                        <Label.FontSize>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40" />
+                        </Label.FontSize>
+                    </Label>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Label Text="Aretes" x:Name="aretesClick" TextColor="#f57dd6" HorizontalOptions="End" VerticalOptions="CenterAndExpand">
+                        <Label.FontSize>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40" />
+                        </Label.FontSize>
+                    </Label>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="2">
+                    <Image Source="aretes.png" x:Name="aretesImgClick" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image.HeightRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="150" Tablet="250" />
+                        </Image.HeightRequest>
+                        <Image.WidthRequest>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="100" Tablet="200" />
+                        </Image.WidthRequest>
+                    </Image>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0">
+                    <Image Source="pulseras.png" x:Name="pulserasImgClick" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image.HeightRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="150" Tablet="250" />
+                            </Image.HeightRequest>
+                            <Image.WidthRequest>
+                                <OnIdiom x:TypeArguments="x:Double" Phone="100" Tablet="200" />
+                            </Image.WidthRequest>
+                        </Image>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
+                    <Label Text="Pulseras" x:Name="pulserasClick" TextColor="#f57dd6" HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+                        <Label.FontSize>
+                            <OnIdiom x:TypeArguments="x:Double" Phone="20" Tablet="40" />
+                        </Label.FontSize>
+                    </Label>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
